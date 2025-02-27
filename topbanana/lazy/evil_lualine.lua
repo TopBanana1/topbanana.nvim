@@ -1,3 +1,5 @@
+return {
+
 local lualine = require('lualine')
 
 local colors = {
@@ -195,3 +197,5 @@ ins_right {
 }
 
 lualine.setup(config)
+
+  }
