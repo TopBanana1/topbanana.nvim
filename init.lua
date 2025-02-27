@@ -506,7 +506,10 @@ require('lazy').setup({
   require 'kickstart.plugins.debug',
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.neo-tree',
-
+  require 'norcalli/nvim-colorizer.lua',
+  config=function()
+    require('colorizer').setup()
+  end,
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
